@@ -1,1 +1,2 @@
-export * from './lib/number';
+export * from './lib/errors';
+export * from './lib/makeRequest';

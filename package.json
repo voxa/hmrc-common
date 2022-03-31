@@ -1,11 +1,11 @@
 {
-  "name": "hmrc-common",
+  "name": "@voxasoftworks/hmrc-common",
   "version": "1.0.0",
   "description": "A set of common resources used across Zenith's TypeScript HMRC libraries",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/leoriviera/hmrc-common",
+  "repository": "https://github.com/voxa/hmrc-common",
   "license": "MIT",
   "keywords": [],
   "scripts": {
@@ -41,10 +41,13 @@
   "engines": {
     "node": ">=10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.26.1"
+  },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
+    "@types/node": "^17.0.23",
     "@typescript-eslint/eslint-plugin": "^4.0.1",
     "@typescript-eslint/parser": "^4.0.1",
     "ava": "^3.12.1",
@@ -54,7 +57,6 @@
     "eslint": "^7.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
-    "eslint-plugin-functional": "^3.0.2",
     "eslint-plugin-import": "^2.22.0",
     "gh-pages": "^3.1.0",
     "npm-run-all": "^4.1.5",
