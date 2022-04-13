@@ -1,6 +1,6 @@
 /**
  * Type for HMRC access token object.
- * Although defined in the hmrc-common package, this should be exported from hmrc-auth
+ * Although defined in the hmrc-common package, this should always be imported from hmrc-auth
  */
 export type _AccessToken = {
     /**
