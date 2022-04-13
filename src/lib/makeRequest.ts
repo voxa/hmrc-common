@@ -1,6 +1,7 @@
 import axios, { Method } from 'axios';
 
 import { _AccessToken } from '../types';
+
 import * as Errors from './errors';
 
 /**
@@ -27,7 +28,7 @@ type RequestOptions = {
     type?: 'data' | 'params';
     /**
      * a key-value object containing additional headers.
-     * 
+     *
      * @remarks These are merged with any fraud prevention headers in the token.
      * @defaultValue {}
      */
@@ -102,8 +103,10 @@ export const makeRequest = async <ArgumentType, ResponseType>(
             headers: {
                 ...headers,
                 ...(token ? token.headers : {}),
-                ...(token ? { Authorization: `Bearer ${token.accessToken}` } : {}),
-                Accept: `application/ vnd.hmrc.${version} + json`,
+                ...(token
+                    ? { Authorization: `Bearer ${token.accessToken}` }
+                    : {}),
+                Accept: `application/vnd.hmrc.${version}+json`,
             },
         });
 
@@ -115,7 +118,7 @@ export const makeRequest = async <ArgumentType, ResponseType>(
                 data: {
                     message: string;
                     code: string;
-                }
+                };
             };
 
             const args = {
