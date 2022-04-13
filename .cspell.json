@@ -21,7 +21,11 @@
     "sandboxed",
     "transpiled",
     "typedoc",
-    "untracked"
+    "untracked",
+    "hmrc",
+    "Voxa",
+    "Voxa's",
+    "voxasoftworks"
   ],
   "flagWords": [],
   "ignorePaths": [
